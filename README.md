@@ -4,9 +4,9 @@
 
 ### 프로젝트 명
 
-Wedding Pre-ceremony Video
+> Wedding Pre-ceremony Video
 
-AI 기반 맞춤형 웨딩 식전영상 제작 서비스 "DeepWed"
+__`DeepWed`__ AI 기반 맞춤형 웨딩 식전영상 제작 서비스
 
 ### 개발 기간
 
@@ -28,16 +28,24 @@ AI 기반 맞춤형 웨딩 식전영상 제작 서비스 "DeepWed"
 
 ## 주요 기능
 
-1. 기존 식전영상 업로드: 사용자가 원본 식전영상을 시스템에 업로드
-2. 신랑과 신부 얼굴 등록: 교체할 신랑과 신부의 얼굴 이미지를 등록
-3. 딥페이크 영상 생성: AI 모델을 사용하여 원본 영상의 얼굴을 신랑, 신부 얼굴로 교체
-4. 생성 영상 다운로드: 완성된 개인화 식전영상을 다운로드
+1. 기존 식전영상 업로드
+    - 사용자가 원본 식전영상을 시스템에 업로드
+2. 신랑과 신부 얼굴 등록
+    - 교체할 신랑과 신부의 얼굴 이미지를 등록
+3. 딥페이크 영상 생성
+    - AI 모델을 사용하여 원본 영상의 얼굴을 신랑, 신부 얼굴로 교체
+4. 생성 영상 다운로드
+    - 완성된 개인화 식전영상을 다운로드
+
+### 용어 설명
+- [Deepfake](../../wiki/What-is-Deepfake)
+
 
 ## 기술 스택
 
 - 프로그래밍 언어: Python
 - 웹 애플리케이션 프레임워크: Streamlit
-- 딥페이크 모델: 선택된 딥페이크 AI 모델 (예: DeepFaceLab, First Order Motion Model 등)
+- 딥페이크 모델: 선택된 딥페이크 AI 모델 (inswrapper_128.onnx)
 
 ## 프로젝트 결과물
 
@@ -45,6 +53,7 @@ AI 기반 맞춤형 웨딩 식전영상 제작 서비스 "DeepWed"
     - Streamlit 기반의 사용자 친화적 웹 인터페이스
     - 직관적인 UI/UX로 사용자가 쉽게 영상을 업로드하고 처리할 수 있는 플랫폼
 2. 딥페이크 영상 처리 엔진
+![alt text](README_Image/flow.png)
     - Python 기반의 고성능 딥페이크 처리 엔진
     - 선택된 딥페이크 AI 모델을 활용한 효율적인 얼굴 교체 기능
 3. 개인화된 웨딩 식전영상
@@ -53,9 +62,6 @@ AI 기반 맞춤형 웨딩 식전영상 제작 서비스 "DeepWed"
 4. 사용자 가이드
     - 웹 애플리케이션 사용 방법에 대한 상세한 설명서
     - 최적의 결과를 얻기 위한 팁과 권장사항 포함
-5. 기술 문서
-    - 시스템 아키텍처 및 주요 구성 요소에 대한 설명
-    - 향후 유지보수 및 확장을 위한 개발자 가이드
 
 ## 향후 확장 계획
 
@@ -72,4 +78,11 @@ AI 기반 맞춤형 웨딩 식전영상 제작 서비스 "DeepWed"
 이 프로젝트를 통해 웨딩 산업에 혁신적인 서비스를 제공하며, AI 기술의 실용적이고 창의적인 활용 사례를 만들어 갈 것으로 기대됩니다.
 
 # 참고 자료
-[Multi-Face Swap](https://github.com/xaviviro/refacer)
+- [Multi-Face Swap](https://github.com/xaviviro/refacer)
+    - 참고한 Deepfake Code
+
+- [InsightFace](https://github.com/deepinsight/insightface)
+    - 얼굴 이미지를 따오는 부분
+
+- [Free Wedding Video](https://pixabay.com/ko/videos/search/wedding/)
+    - 무료로 웨딩 비디오를 다운로드 할 수 있는 사이트
